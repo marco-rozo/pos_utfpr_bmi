@@ -31,8 +31,8 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # # Verifies if the dart code is formatted well
-      # - name: Verify formatting
-      #   run: dart format --output=none --set-exit-if-changed .
-      #   # --set-exit-if-changed stops execution if the code isn´t well formatted
-      #   # --output=none prints files which needs to be formatted
+      # Verifies if the dart code is formatted well
+      - name: Verify formatting
+        run: dart format --output=none --set-exit-if-changed .
+        # --set-exit-if-changed stops execution if the code isn´t well formatted
+        # --output=none prints files which needs to be formatted
